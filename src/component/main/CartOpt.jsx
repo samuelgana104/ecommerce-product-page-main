@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import shoes from "./shoes";
 import remove from "../assets/images/icon-delete.svg";
 
-function CartOpt({ cartnum, num ,deleteList}) {
+function CartOpt({ cartnum,deleteList}) {
   let [shoe, setShoe] = useState(shoes);
   let shoeStore = JSON.parse(localStorage.getItem('shoe'))
 

@@ -6,7 +6,7 @@ import close from "../assets/images/icon-close.svg";
 import hams from "../assets/images/icon-menu.svg";
 import Carts from "./Carts";
 
-function Head({cartnum,cartop,setCartop}) {
+function Head({cartnum,cartop,setCartop,ham, setHam}) {
   let [lists, setList] = useState([
     "collections",
     "men",
@@ -14,7 +14,6 @@ function Head({cartnum,cartop,setCartop}) {
     "about",
     "contact",
   ]);
-  let [ham, setHam] = useState(false);
   useEffect(() => {
     if (ham) document.body.classList.add("overflow-hidden");
     return () => {
